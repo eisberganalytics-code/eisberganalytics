@@ -10,7 +10,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Eisberg Analytics - Data Intelligence Systems",
   description:
-    "Eisberg brings AI to your data. ETL pipelines, data warehousing, RAG systems, and AI-powered analytics for business intelligence.",
+    "Eisberg brings AI to your data. ELT pipelines, data warehousing, RAG systems, and AI-powered analytics for business intelligence.",
 };
 
 export default function RootLayout({

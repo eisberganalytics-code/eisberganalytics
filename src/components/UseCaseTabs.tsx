@@ -19,7 +19,7 @@ const tabs = [
     icon: Layers,
     title: "Intelligent data processing for batch and real time",
     description:
-      "Implement a single solution for all of your ETL use cases that automatically adapts to help ensure data quality.",
+      "Implement a single solution for all of your ELT use cases that automatically adapts to help ensure data quality.",
     bullets: [
       "Simple workflow authoring for batch and streaming",
       "End-to-end pipeline monitoring",
