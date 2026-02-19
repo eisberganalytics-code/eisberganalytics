@@ -55,9 +55,11 @@ export function Navbar() {
           >
             Contact Us
           </a>
-          <Button className="rounded-md bg-clearwater-500 px-5 text-sm font-semibold text-white hover:bg-clearwater-600">
-            Get Started
-          </Button>
+          <a href="#contact">
+            <Button className="rounded-md bg-clearwater-500 px-5 text-sm font-semibold text-white hover:bg-clearwater-600">
+              Get Started
+            </Button>
+          </a>
         </div>
 
         {/* Mobile hamburger */}
@@ -95,9 +97,11 @@ export function Navbar() {
             <a href="#contact" className="text-sm font-medium text-charcoal/70">
               Contact Us
             </a>
-            <Button className="mt-2 w-full rounded-md bg-clearwater-500 text-sm font-semibold text-white hover:bg-clearwater-600">
-              Get Started
-            </Button>
+            <a href="#contact" onClick={() => setMobileOpen(false)}>
+              <Button className="mt-2 w-full rounded-md bg-clearwater-500 text-sm font-semibold text-white hover:bg-clearwater-600">
+                Get Started
+              </Button>
+            </a>
           </nav>
         </div>
       )}

@@ -74,11 +74,13 @@ export function HeroSection() {
 
         {/* CTA row */}
         <div className="mt-14 flex items-center justify-center gap-4">
-          <Button className="rounded-md bg-charcoal px-7 py-3 text-sm font-semibold text-white hover:bg-charcoal/90">
-            Explore the Systems
-          </Button>
+          <a href="#contact">
+            <Button className="rounded-md bg-charcoal px-7 py-3 text-sm font-semibold text-white hover:bg-charcoal/90">
+              Explore the Systems
+            </Button>
+          </a>
           <a
-            href="#"
+            href="#contact"
             className="flex items-center gap-1.5 text-sm font-semibold text-clearwater-500 transition-colors hover:text-clearwater-600"
           >
             Learn More

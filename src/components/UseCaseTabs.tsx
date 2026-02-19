@@ -135,11 +135,13 @@ export function UseCaseTabs() {
               ))}
             </ul>
             <div className="flex items-center gap-4">
-              <Button className="rounded-md bg-charcoal px-6 py-3 text-sm font-semibold text-white hover:bg-charcoal/90">
-                See How
-              </Button>
+              <a href="#contact">
+                <Button className="rounded-md bg-charcoal px-6 py-3 text-sm font-semibold text-white hover:bg-charcoal/90">
+                  See How
+                </Button>
+              </a>
               <a
-                href="#"
+                href="#contact"
                 className="flex items-center gap-1.5 text-sm font-semibold text-clearwater-500 transition-colors hover:text-clearwater-600"
               >
                 Watch demo
