@@ -7,11 +7,11 @@ import { Menu, X } from "lucide-react";
 import { Diamond } from "lucide-react";
 
 const navLinks = [
-  { label: "Why Eisberg", href: "#" },
-  { label: "Product", href: "#" },
-  { label: "Solutions", href: "#" },
-  { label: "Resources", href: "#" },
-  { label: "About", href: "#" },
+  { label: "Why Eisberg", href: "#services" },
+  { label: "Product", href: "#services" },
+  { label: "Solutions", href: "#services" },
+  { label: "Resources", href: "#services" },
+  { label: "About", href: "#services" },
 ];
 
 export function Navbar() {
@@ -43,12 +43,6 @@ export function Navbar() {
 
         {/* Desktop right */}
         <div className="hidden items-center gap-4 md:flex">
-          <a
-            href="#"
-            className="text-sm font-medium text-charcoal/70 transition-colors hover:text-clearwater-500"
-          >
-            Login
-          </a>
           <a
             href="#contact"
             className="text-sm font-medium text-charcoal/70 transition-colors hover:text-clearwater-500"
@@ -91,9 +85,6 @@ export function Navbar() {
               </a>
             ))}
             <hr className="my-2 border-black/5" />
-            <a href="#" className="text-sm font-medium text-charcoal/70">
-              Login
-            </a>
             <a href="#contact" className="text-sm font-medium text-charcoal/70">
               Contact Us
             </a>

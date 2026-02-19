@@ -85,7 +85,7 @@ export function UseCaseTabs() {
   const current = tabs.find((t) => t.id === activeTab)!;
 
   return (
-    <section className="bg-cream px-6 py-24">
+    <section id="services" className="bg-cream px-6 py-24">
       <div className="mx-auto max-w-7xl">
         {/* Section header */}
         <div className="mb-6 text-center">
