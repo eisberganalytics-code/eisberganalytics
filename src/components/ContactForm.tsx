@@ -8,13 +8,13 @@ import { Label } from "@/components/ui/label";
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
-    console.log("Contact form submitted:", {
-      name: formData.get("name"),
-      organization: formData.get("organization"),
-      email: formData.get("email"),
+    await fetch("https://formspree.io/f/mreaapwn", {
+      method: "POST",
+      body: formData,
+      headers: { Accept: "application/json" },
     });
     setSubmitted(true);
   }
