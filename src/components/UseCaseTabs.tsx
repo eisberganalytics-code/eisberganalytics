@@ -15,7 +15,7 @@ import {
 const tabs = [
   {
     id: "etl",
-    label: "ETL Pipeline",
+    label: "ELT Pipeline",
     icon: Layers,
     title: "Intelligent data processing for batch and real time",
     description:
