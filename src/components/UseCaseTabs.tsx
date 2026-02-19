@@ -2,21 +2,13 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import {
-  ArrowRight,
-  Check,
-  Database,
-  BrainCircuit,
-  Layers,
-  BarChart3,
-  MessageSquareText,
-} from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 
 const tabs = [
   {
     id: "etl",
     label: "ELT Pipeline",
-    icon: Layers,
+    image: "/elt-pipeline.png",
     title: "Intelligent data processing for batch and real time",
     description:
       "Implement a single solution for all of your ELT use cases that automatically adapts to help ensure data quality.",
@@ -29,7 +21,7 @@ const tabs = [
   {
     id: "warehouse",
     label: "Data Warehouse",
-    icon: Database,
+    image: "/data-warehouse.png",
     title: "Clean, structured data for every use case",
     description:
       "Achieve better price/performance for SQL and BI workloads by moving from legacy data sources to a modern cloud warehouse.",
@@ -42,7 +34,7 @@ const tabs = [
   {
     id: "rag",
     label: "RAG & Vectors",
-    icon: BrainCircuit,
+    image: "/rag-vectors.png",
     title: "Vectorized unstructured data for AI retrieval",
     description:
       "Transform documents, images, and unstructured content into searchable vector embeddings that power intelligent AI retrieval.",
@@ -55,7 +47,7 @@ const tabs = [
   {
     id: "ai",
     label: "AI Analytics",
-    icon: BarChart3,
+    image: "/ai-analytics.png",
     title: "Build better AI with a data-centric approach",
     description:
       "Great models are built with great data. Maintain quality, control and data privacy across the entire AI workflow.",
@@ -68,7 +60,7 @@ const tabs = [
   {
     id: "insights",
     label: "Data Insights",
-    icon: MessageSquareText,
+    image: "/data-insights.png",
     title: "Ask questions, get answers from your data",
     description:
       "Empower business users to discover insights using natural language — no SQL or technical expertise required.",
@@ -150,14 +142,13 @@ export function UseCaseTabs() {
             </div>
           </div>
 
-          {/* Right: placeholder visual */}
+          {/* Right: tab image */}
           <div className="flex items-center justify-center">
-            <div className="flex h-80 w-full flex-col items-center justify-center rounded-2xl bg-gradient-to-br from-clearwater-50 to-white ring-1 ring-clearwater-200/40">
-              <current.icon className="mb-4 h-16 w-16 text-clearwater-400/60" />
-              <span className="text-sm font-medium text-clearwater-500/50">
-                {current.label}
-              </span>
-            </div>
+            <img
+              src={current.image}
+              alt={current.label}
+              className="w-full max-w-lg rounded-2xl object-contain"
+            />
           </div>
         </div>
       </div>
